@@ -1,0 +1,12 @@
+basic structure for the room handle:
+    class room {
+    private:
+        std::vector<content> roomContent;
+        roomIndex top;
+        roomIndex bottom;
+        roomIndex left;
+        roomIndex right;
+        friend class navigator;
+    public:
+        void getData(/* data from the JSON handler */);
+    };
