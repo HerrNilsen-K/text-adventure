@@ -4,9 +4,11 @@
 
 #include <stdio.h>
 
+#include "assert.h"
+
 int main()
 {
-	printf("Hello text-adventure!\n");
-	getchar();
+	assert(true, "Should not show!");
+	assert(false, "Should break!");
     return 0;
 }
