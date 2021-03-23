@@ -55,7 +55,7 @@ int main()
 		if (selection >= level.rooms[currentRoom].exits.size())
 		{
 			clear_console();
-			printf("Invalid index.\n", (u32)level.rooms[currentRoom].exits.size());
+			printf("Invalid index.\n");
 			stall_for_milliseconds(stallTime);
 			continue;
 		}
